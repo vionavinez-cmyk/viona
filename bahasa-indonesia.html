@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Halaman Bahasa Indonesia Viona dari Sekolah Cinta Kasih Tzu Chi. Portal Pembelajaran Bahasa, Sastra & Karya Tulis.">
+    <meta name="author" content="Viona">
+    <title>Bahasa Indonesia | Viona - Sekolah Cinta Kasih Tzu Chi</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blue: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        },
+                        slate: {
+                            50: '#fffcf0',   // Lightest cream
+                            100: '#fdf6e2',  // Warm cream
+                            200: '#f7ebc6',  // Biscuit/beige
+                            300: '#edd59d',  // Sandy cream
+                            400: '#dfba73',
+                            500: '#ca9746',
+                            600: '#ad762d',
+                            700: '#8c5920',
+                            800: '#6c3f16',
+                            900: '#4d2b0e',  // Dark cream/brown
+                            950: '#2d1806',  // Deep espresso
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Stylesheet (Black & White Theme / Shared Styles) -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body
+    class="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col selection:bg-zinc-900 selection:text-white">
+
+    <!-- ==================== HEADER & NAVBAR ==================== -->
+    <header class="glass-nav sticky top-0 z-50 border-b border-slate-200/90 shadow-xs transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo & School Branding -->
+                <a href="INFOR.html?tab=dashboard" class="flex items-center gap-3 group">
+                    <div
+                        class="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 text-white flex items-center justify-center font-extrabold text-xl shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform duration-300">
+                        V
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-bold text-lg text-slate-950 tracking-tight leading-tight group-hover:text-blue-600 transition-colors">VIONA</span>
+                        <span class="text-xs font-semibold text-slate-500 tracking-wide uppercase">Sekolah Cinta Kasih
+                            Tzu Chi</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav
+                    class="hidden md:flex items-center gap-1 bg-slate-100 p-1.5 rounded-2xl border border-slate-200/80 shadow-inner">
+                    <a href="INFOR.html?tab=dashboard"
+                        class="text-slate-600 hover:text-slate-950 hover:bg-slate-200/60 font-semibold text-sm px-5 py-2.5 rounded-xl transition-all duration-300 flex items-center gap-2">
+                        <i class="fa-solid fa-house text-xs"></i> Dashboard
+                    </a>
+                    <a href="INFOR.html?tab=profil"
+                        class="text-slate-600 hover:text-slate-950 hover:bg-slate-200/60 font-semibold text-sm px-5 py-2.5 rounded-xl transition-all duration-300 flex items-center gap-2">
+                        <i class="fa-solid fa-user text-xs"></i> Profil
+                    </a>
+                    <a href="informatika.html" target="_blank" rel="noopener"
+                        class="text-slate-600 hover:text-slate-950 hover:bg-slate-200/60 font-semibold text-sm px-5 py-2.5 rounded-xl transition-all duration-300 flex items-center gap-2">
+                        <i class="fa-solid fa-code text-xs"></i> Informatika
+                    </a>
+                    <a href="bahasa-indonesia.html" target="_blank" rel="noopener"
+                        class="bg-blue-600 text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-md shadow-blue-500/10 transition-all duration-300 flex items-center gap-2">
+                        <i class="fa-solid fa-book-bookmark text-xs"></i> Bahasa Indonesia
+                    </a>
+                    <a href="spotify-game.html" target="_blank" rel="noopener"
+                        class="text-slate-600 hover:text-slate-950 hover:bg-slate-200/60 font-semibold text-sm px-5 py-2.5 rounded-xl transition-all duration-300 flex items-center gap-2">
+                        <i class="fa-brands fa-spotify text-xs"></i> Spotify & Game
+                    </a>
+                </nav>
+
+                <!-- Social Media Quick Action Links Header -->
+                <div class="hidden lg:flex items-center gap-2">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram Viona"
+                        class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-blue-600 text-slate-700 hover:text-white flex items-center justify-center transition-all duration-200 border border-slate-200">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub Viona"
+                        class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-blue-600 text-slate-700 hover:text-white flex items-center justify-center transition-all duration-200 border border-slate-200">
+                        <i class="fa-brands fa-github text-sm"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn Viona"
+                        class="w-9 h-9 rounded-lg bg-slate-100 hover:bg-blue-600 text-slate-700 hover:text-white flex items-center justify-center transition-all duration-200 border border-slate-200">
+                        <i class="fa-brands fa-linkedin-in text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu"
+                        class="p-2.5 rounded-xl bg-blue-50 text-blue-700 hover:bg-blue-100 focus:outline-none border border-blue-100">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/95 border-b border-blue-100 px-4 pt-3 pb-6 space-y-2 shadow-xl">
+            <a href="INFOR.html?tab=dashboard"
+                class="w-full text-left text-slate-800 hover:bg-blue-50 hover:text-blue-600 font-semibold px-4 py-3 rounded-xl flex items-center gap-3">
+                <i class="fa-solid fa-house"></i> Dashboard
+            </a>
+            <a href="INFOR.html?tab=profil"
+                class="w-full text-left text-slate-800 hover:bg-blue-50 hover:text-blue-600 font-semibold px-4 py-3 rounded-xl flex items-center gap-3">
+                <i class="fa-solid fa-user"></i> Profil
+            </a>
+            <a href="informatika.html" target="_blank" rel="noopener"
+                class="w-full text-left text-slate-800 hover:bg-blue-50 hover:text-blue-600 font-semibold px-4 py-3 rounded-xl flex items-center gap-3">
+                <i class="fa-solid fa-code"></i> Informatika
+            </a>
+            <a href="bahasa-indonesia.html" target="_blank" rel="noopener"
+                class="w-full text-left bg-blue-600 text-white font-semibold px-4 py-3 rounded-xl flex items-center gap-3">
+                <i class="fa-solid fa-book-bookmark"></i> Bahasa Indonesia
+            </a>
+            <a href="spotify-game.html" target="_blank" rel="noopener"
+                class="w-full text-left text-slate-800 hover:bg-blue-50 hover:text-blue-600 font-semibold px-4 py-3 rounded-xl flex items-center gap-3">
+                <i class="fa-brands fa-spotify"></i> Spotify & Game
+            </a>
+            <div class="pt-4 border-t border-slate-200 flex items-center justify-around text-slate-700">
+                <a href="https://instagram.com" target="_blank" class="p-2"><i
+                        class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="https://github.com" target="_blank" class="p-2"><i class="fa-brands fa-github text-xl"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="p-2"><i
+                        class="fa-brands fa-linkedin-in text-xl"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT AREA ==================== -->
+    <main class="flex-grow">
+
+        <!-- ==================== SEARCH HERO SECTION ==================== -->
+        <section class="relative min-h-[70vh] flex flex-col justify-center items-center bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-white py-16 px-4 border-b border-blue-900/50 overflow-hidden">
+            <!-- Animated Floating Blobs -->
+            <div class="absolute -top-24 -left-24 w-96 h-96 bg-blue-600/10 rounded-full filter blur-3xl animate-float"></div>
+            <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-sky-500/10 rounded-full filter blur-3xl animate-float-delayed"></div>
+
+            <div class="max-w-3xl w-full text-center space-y-8 relative z-10">
+                <!-- Bahasa Logo Design (Google Style) -->
+                <div class="space-y-3">
+                    <div class="flex flex-wrap items-center justify-center gap-0.5 text-5xl sm:text-6xl font-extrabold tracking-tight select-none">
+                        <span class="text-blue-500 font-sans">B</span>
+                        <span class="text-red-500 font-sans">a</span>
+                        <span class="text-yellow-400 font-sans">h</span>
+                        <span class="text-blue-500 font-sans">a</span>
+                        <span class="text-green-500 font-sans">s</span>
+                        <span class="text-red-500 font-sans">a</span>
+                        <span class="text-slate-400 font-sans px-1">&nbsp;</span>
+                        <span class="text-blue-500 font-sans">I</span>
+                        <span class="text-red-500 font-sans">n</span>
+                        <span class="text-yellow-400 font-sans">d</span>
+                        <span class="text-blue-500 font-sans">o</span>
+                        <span class="text-green-500 font-sans">n</span>
+                        <span class="text-red-500 font-sans">e</span>
+                        <span class="text-blue-500 font-sans">s</span>
+                        <span class="text-yellow-400 font-sans">i</span>
+                        <span class="text-green-500 font-sans">a</span>
+                    </div>
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/25 text-xs text-blue-300 font-medium">
+                        <i class="fa-solid fa-feather-pointed"></i> Portal Bahasa &amp; Sastra Cinta Kasih
+                    </div>
+                </div>
+
+                <!-- Google Search Bar (Glassmorphic Box) -->
+                <form action="https://www.google.com/search" method="GET" target="_blank" class="w-full max-w-2xl mx-auto relative group">
+                    <!-- Glow Outline on focus -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-sky-400 rounded-2xl blur-md opacity-30 group-focus-within:opacity-75 transition duration-500"></div>
+                    
+                    <!-- Search Input Box -->
+                    <div class="relative bg-slate-900/80 border border-slate-700/60 rounded-2xl flex items-center px-4.5 py-4 shadow-2xl backdrop-blur-md group-focus-within:border-blue-500/60 transition-colors">
+                        <i class="fa-solid fa-magnifying-glass text-slate-400 text-lg mr-3.5 group-focus-within:text-blue-400 transition-colors"></i>
+                        <input type="text" name="q" placeholder="Telusuri materi Bahasa Indonesia..." autocomplete="off" required
+                            class="w-full text-white text-base focus:outline-none placeholder-slate-500 bg-transparent">
+                        
+                        <!-- Search Tools (Divider & Icons) -->
+                        <div class="flex items-center gap-4 text-slate-400 pl-4 border-l border-slate-700/80">
+                            <button type="button" title="Pencarian Suara" class="hover:text-blue-400 transition-colors">
+                                <i class="fa-solid fa-microphone text-base"></i>
+                            </button>
+                            <button type="button" title="Pencarian Gambar" class="hover:text-blue-400 transition-colors">
+                                <i class="fa-solid fa-camera text-base"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Search Button Actions -->
+                    <div class="flex flex-wrap items-center justify-center gap-3.5 mt-8">
+                        <button type="submit" class="px-6 py-3 rounded-xl bg-blue-600 text-white font-bold text-xs hover:bg-blue-700 transition-all shadow-md hover:shadow-lg shadow-blue-600/10 hover:-translate-y-0.5 flex items-center gap-1.5">
+                            <i class="fa-solid fa-magnifying-glass text-[10px]"></i> Cari dengan Google
+                        </button>
+                        <a href="INFOR.html?tab=dashboard" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-750 text-slate-200 border border-slate-700/80 font-bold text-xs transition-all hover:-translate-y-0.5 flex items-center gap-1.5">
+                            <i class="fa-solid fa-house text-[10px]"></i> Kembali ke Beranda
+                        </a>
+                    </div>
+                </form>
+
+                <!-- Bahasa Quick Links -->
+                <div class="pt-6 text-center">
+                    <span class="text-xs text-slate-400 mr-2">Pintasan Cepat:</span>
+                    <div class="inline-flex flex-wrap justify-center gap-2 mt-2 sm:mt-0">
+                        <a href="https://kbbi.kemdikbud.go.id" target="_blank" rel="noopener" class="px-3 py-1 rounded-lg bg-slate-800/60 border border-slate-700/50 text-[11px] text-slate-300 hover:text-blue-400 hover:bg-slate-800 transition-colors">KBBI Online</a>
+                        <a href="https://puebi.readthedocs.io" target="_blank" rel="noopener" class="px-3 py-1 rounded-lg bg-slate-800/60 border border-slate-700/50 text-[11px] text-slate-300 hover:text-blue-400 hover:bg-slate-800 transition-colors">PUEBI Daring</a>
+                        <a href="https://id.wikipedia.org" target="_blank" rel="noopener" class="px-3 py-1 rounded-lg bg-slate-800/60 border border-slate-700/50 text-[11px] text-slate-300 hover:text-blue-400 hover:bg-slate-800 transition-colors">Wikipedia ID</a>
+                        <a href="#konten-edukasi" class="px-3 py-1 rounded-lg bg-blue-900/30 border border-blue-800/30 text-[11px] text-blue-300 hover:text-white hover:bg-blue-900/50 transition-colors">Materi &amp; Karya ↓</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EDUCATION CONTENT SECTION ==================== -->
+        <section id="konten-edukasi" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <!-- ==================== ARTIKEL PENJELASAN BAHASA INDONESIA ==================== -->
+                <div class="mb-16">
+                    <div class="glass-card rounded-3xl p-8 sm:p-10 shadow-sm border border-blue-100/80 bg-gradient-to-br from-white via-blue-50/20 to-white hover:shadow-md transition-all duration-300">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-start">
+
+                            <!-- Left Column: Article Text -->
+                            <div class="lg:col-span-7 space-y-6">
+                                <div class="flex items-center gap-2">
+                                    <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white flex items-center gap-1.5 shadow-sm">
+                                        <i class="fa-solid fa-graduation-cap"></i> Materi Pembelajaran
+                                    </span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100">
+                                        Bahasa Indonesia
+                                    </span>
+                                </div>
+
+                                <div class="space-y-2">
+                                    <h3 class="text-3xl font-extrabold text-slate-950 tracking-tight leading-tight">
+                                        Sastra & Kebahasaan: <br>
+                                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500">Identitas Bangsa & Literasi</span>
+                                    </h3>
+                                    <p class="text-xs text-slate-400 font-medium">Kurikulum Sekolah Cinta Kasih Tzu Chi • Terakhir Diperbarui: Juli 2026</p>
+                                </div>
+                                <div class="space-y-4.5 text-slate-600 text-sm max-h-[600px] overflow-y-auto pr-1 custom-scrollbar">
+                                    <!-- Materi 1 -->
+                                    <div data-task-id="materi-indo-1" class="open-modal-btn cursor-pointer bg-blue-50/40 p-4.5 rounded-2xl border border-blue-100/70 hover:border-blue-400 hover:bg-white hover:shadow-md hover:scale-[1.01] active:scale-[0.99] transition-all duration-200">
+                                        <h4 class="text-sm font-bold text-blue-900 flex items-center justify-between mb-1.5">
+                                            <span class="flex items-center gap-2">
+                                                <span class="w-5.5 h-5.5 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs font-extrabold">1</span>
+                                                Materi 1: Teks LHO (Laporan Hasil Observasi)
+                                            </span>
+                                            <span class="text-[11px] text-blue-500 font-semibold flex items-center gap-1">Detail <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+                                        </h4>
+                                        <p class="text-xs leading-relaxed">
+                                            Teks LHO merupakan karangan yang memaparkan hasil pengamatan atau observasi terhadap suatu objek secara sistematis, objektif, dan faktual. Teks ini ditulis berdasarkan data di lapangan tanpa dicampuri opini subjektif penulis. Struktur utamanya meliputi pernyataan umum atau klasifikasi, deskripsi bagian, dan deskripsi manfaat. LHO sangat penting untuk melatih cara berpikir ilmiah, kritis, dan berorientasi pada fakta riil yang dapat dipertanggungjawabkan.
+                                        </p>
+                                    </div>
+
+                                    <!-- Materi 2 -->
+                                    <div data-task-id="materi-indo-2" class="open-modal-btn cursor-pointer bg-blue-50/40 p-4.5 rounded-2xl border border-blue-100/70 hover:border-blue-400 hover:bg-white hover:shadow-md hover:scale-[1.01] active:scale-[0.99] transition-all duration-200">
+                                        <h4 class="text-sm font-bold text-blue-900 flex items-center justify-between mb-1.5">
+                                            <span class="flex items-center gap-2">
+                                                <span class="w-5.5 h-5.5 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs font-extrabold">2</span>
+                                                Materi 2: Teks Anekdot
+                                            </span>
+                                            <span class="text-[11px] text-blue-500 font-semibold flex items-center gap-1">Detail <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+                                        </h4>
+                                        <p class="text-xs leading-relaxed">
+                                            Teks anekdot adalah cerita pendek yang lucu, menarik, dan mengesankan. Meskipun bersifat menghibur, teks anekdot memiliki fungsi krusial untuk menyampaikan kritik sosial atau sindiran terhadap fenomena sosial secara cerdas dan santun. Di dalamnya terkandung sindiran halus yang dikemas dalam bentuk kelucuan agar pesan moral atau kritik terhadap kebijakan publik dapat diterima dengan baik tanpa memicu konflik.
+                                        </p>
+                                    </div>
+
+                                    <!-- Materi 3 -->
+                                    <div data-task-id="materi-indo-3" class="open-modal-btn cursor-pointer bg-blue-50/40 p-4.5 rounded-2xl border border-blue-100/70 hover:border-blue-400 hover:bg-white hover:shadow-md hover:scale-[1.01] active:scale-[0.99] transition-all duration-200">
+                                        <h4 class="text-sm font-bold text-blue-900 flex items-center justify-between mb-1.5">
+                                            <span class="flex items-center gap-2">
+                                                <span class="w-5.5 h-5.5 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs font-extrabold">3</span>
+                                                Materi 3: Teks Hikayat
+                                            </span>
+                                            <span class="text-[11px] text-blue-500 font-semibold flex items-center gap-1">Detail <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+                                        </h4>
+                                        <p class="text-xs leading-relaxed">
+                                            Hikayat adalah karya sastra prosa lama berbahasa Melayu yang berkisah tentang kepahlawanan, kesaktian raja-raja, atau tokoh ajaib. Hikayat kental dengan unsur petualangan magis (kemustahilan) dan sarat akan nilai-nilai moral kehidupan. Membaca hikayat tidak hanya mengenalkan kita pada khazanah budaya klasik Nusantara, melainkan juga menanamkan karakter berbudi luhur serta kesetiaan melalui teladan para tokohnya.
+                                        </p>
+                                    </div>
+
+                                    <!-- Materi 4 -->
+                                    <div data-task-id="materi-indo-4" class="open-modal-btn cursor-pointer bg-blue-50/40 p-4.5 rounded-2xl border border-blue-100/70 hover:border-blue-400 hover:bg-white hover:shadow-md hover:scale-[1.01] active:scale-[0.99] transition-all duration-200">
+                                        <h4 class="text-sm font-bold text-blue-900 flex items-center justify-between mb-1.5">
+                                            <span class="flex items-center gap-2">
+                                                <span class="w-5.5 h-5.5 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs font-extrabold">4</span>
+                                                Materi 4: Teks Biografi
+                                            </span>
+                                            <span class="text-[11px] text-blue-500 font-semibold flex items-center gap-1">Detail <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+                                        </h4>
+                                        <p class="text-xs leading-relaxed">
+                                            Teks biografi mengisahkan riwayat dan perjalanan hidup seseorang secara faktual yang ditulis oleh orang lain. Tujuannya adalah untuk mendokumentasikan pencapaian, perjuangan, serta keteladanan tokoh tersebut agar menginspirasi pembaca. Penulisan biografi menuntut keakuratan data sejarah, wawancara mendalam, dan penataan narasi yang objektif agar pembaca dapat memetik hikmah kehidupan dari kisah perjuangan sang tokoh.
+                                        </p>
+                                    </div>
+
+                                    <!-- Materi 5 -->
+                                    <div data-task-id="materi-indo-5" class="open-modal-btn cursor-pointer bg-blue-50/40 p-4.5 rounded-2xl border border-blue-100/70 hover:border-blue-400 hover:bg-white hover:shadow-md hover:scale-[1.01] active:scale-[0.99] transition-all duration-200">
+                                        <h4 class="text-sm font-bold text-blue-900 flex items-center justify-between mb-1.5">
+                                            <span class="flex items-center gap-2">
+                                                <span class="w-5.5 h-5.5 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs font-extrabold">5</span>
+                                                Materi 5: Puisi
+                                            </span>
+                                            <span class="text-[11px] text-blue-500 font-semibold flex items-center gap-1">Detail <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+                                        </h4>
+                                        <p class="text-xs leading-relaxed">
+                                            Puisi adalah ungkapan emosi, pemikiran, dan imajinasi penyair melalui bait-bait indah yang terikat oleh rima, irama, diksi pilihan, serta majas. Puisi mentransformasikan ide kompleks menjadi karya sastra yang penuh estetika visual dan rasa. Melalui diksi yang padat dan penuh makna, puisi mampu menyentuh lubuk hati terdalam pembaca, serta menjadi media ekspresi diri dan refleksi sosial yang sangat kuat.
+                                        </p>
+                                    </div>
+
+                                    <!-- Materi 6 -->
+                                    <div data-task-id="materi-indo-6" class="open-modal-btn cursor-pointer bg-blue-50/40 p-4.5 rounded-2xl border border-blue-100/70 hover:border-blue-400 hover:bg-white hover:shadow-md hover:scale-[1.01] active:scale-[0.99] transition-all duration-200">
+                                        <h4 class="text-sm font-bold text-blue-900 flex items-center justify-between mb-1.5">
+                                            <span class="flex items-center gap-2">
+                                                <span class="w-5.5 h-5.5 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs font-extrabold">6</span>
+                                                Materi 6: Teks Negosiasi
+                                            </span>
+                                            <span class="text-[11px] text-blue-500 font-semibold flex items-center gap-1">Detail <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+                                        </h4>
+                                        <p class="text-xs leading-relaxed">
+                                            Teks negosiasi berisi percakapan atau interaksi sosial antara dua pihak atau lebih yang memiliki kepentingan berbeda. Melalui dialog taktis dan kompromi santun, negosiasi bertujuan untuk menghasilkan kesepakatan bersama yang saling menguntungkan. Pemahaman struktur negosiasi seperti pengajuan, penawaran, dan persetujuan melatih kemampuan komunikasi diplomatis, empati sosial, serta pemecahan masalah tanpa kekerasan.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Column: 4 Pillars of Language Grid -->
+                            <div class="lg:col-span-5 space-y-5 lg:pl-4">
+                                <div class="space-y-1">
+                                    <h4 class="text-sm font-extrabold text-slate-950 tracking-wide uppercase flex items-center gap-2">
+                                        <i class="fa-solid fa-book-open text-blue-600"></i> 4 Pilar Kebahasaan
+                                    </h4>
+                                    <p class="text-xs text-slate-500">Kompetensi dasar pembelajaran literasi bahasa:</p>
+                                </div>
+
+                                <div class="space-y-2.5 max-h-[460px] overflow-y-auto pr-1 custom-scrollbar">
+                                    <!-- Membaca -->
+                                    <div class="group p-3 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 hover:bg-white hover-lift transition-all duration-300">
+                                        <div class="flex gap-3">
+                                            <div class="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xs font-bold shrink-0 shadow-sm">
+                                                MB
+                                            </div>
+                                            <div>
+                                                <h5 class="text-xs font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Membaca &amp; Memirsa</h5>
+                                                <p class="text-[10px] text-slate-500 mt-0.5 leading-relaxed">Menganalisis, mengevaluasi, dan menyimpulkan informasi secara kritis dari berbagai jenis teks bacaan.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Menulis -->
+                                    <div class="group p-3 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 hover:bg-white hover-lift transition-all duration-300">
+                                        <div class="flex gap-3">
+                                            <div class="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xs font-bold shrink-0 shadow-sm">
+                                                MN
+                                            </div>
+                                            <div>
+                                                <h5 class="text-xs font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Menulis &amp; Mengarang</h5>
+                                                <p class="text-[10px] text-slate-500 mt-0.5 leading-relaxed">Memproduksi gagasan orisinal dalam bentuk teks ilmiah, artikel opini, resensi, puisi, maupun prosa kreatif.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Menyimak -->
+                                    <div class="group p-3 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 hover:bg-white hover-lift transition-all duration-300">
+                                        <div class="flex gap-3">
+                                            <div class="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xs font-bold shrink-0 shadow-sm">
+                                                MY
+                                            </div>
+                                            <div>
+                                                <h5 class="text-xs font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Menyimak &amp; Memahami</h5>
+                                                <p class="text-[10px] text-slate-500 mt-0.5 leading-relaxed">Menangkap ide pokok, maksud pembicara, serta menganalisis argumen lisan dalam diskusi maupun presentasi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Berbicara -->
+                                    <div class="group p-3 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 hover:bg-white hover-lift transition-all duration-300">
+                                        <div class="flex gap-3">
+                                            <div class="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xs font-bold shrink-0 shadow-sm">
+                                                BB
+                                            </div>
+                                            <div>
+                                                <h5 class="text-xs font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Berbicara &amp; Mempresentasikan</h5>
+                                                <p class="text-[10px] text-slate-500 mt-0.5 leading-relaxed">Melatih retorika komunikasi, kecakapan ceramah, pidato persuasif, dan teknik presentasi visual di depan audiens.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subtitle: Kumpulan Tugas -->
+                <div id="tugas-praktik" class="border-t border-slate-200/80 pt-10 mt-6 mb-6">
+                    <h3 class="text-2xl font-bold text-slate-950">Kumpulan Tugas &amp; Karya Tulis</h3>
+                    <p class="text-slate-500 text-sm mt-1">Dokumentasi hasil karya sastra puisi, esai ilmiah, resensi novel, dan retorika pidato komunikasi.</p>
+                </div>
+
+                <!-- Controls: Filters & Search Bar -->
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8 bg-white p-4 rounded-2xl shadow-sm border border-blue-100">
+                    <!-- Category Filters -->
+                    <div class="flex flex-wrap items-center gap-2 w-full md:w-auto">
+                        <button data-filter="all"
+                            class="indo-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white transition-all shadow-sm">
+                            Semua Karya
+                        </button>
+                        <button data-filter="puisi"
+                            class="indo-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-300 hover:border-blue-600 hover:text-blue-600 transition-all">
+                            Puisi Sastra
+                        </button>
+                        <button data-filter="esai"
+                            class="indo-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-300 hover:border-blue-600 hover:text-blue-600 transition-all">
+                            Esai &amp; Artikel
+                        </button>
+                        <button data-filter="resensi"
+                            class="indo-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-300 hover:border-blue-600 hover:text-blue-600 transition-all">
+                            Resensi Buku
+                        </button>
+                    </div>
+
+                    <!-- Search Input -->
+                    <div class="relative w-full md:w-72">
+                        <input type="text" id="indo-search-input" placeholder="Cari karya Bahasa Indonesia..."
+                            class="w-full pl-10 pr-4 py-2 rounded-xl text-xs border border-zinc-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-2.5 text-slate-400 text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- Indo Item 1 -->
+                    <div class="indo-card glass-card p-6 rounded-2xl border border-blue-100 hover-lift flex flex-col justify-between"
+                        data-category="puisi" data-title="puisi cahaya kasih di ujung pena sastra tzu chi"
+                        data-desc="puisi bertema rasa syukur ketulusan belajar dan budaya humanis">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white">Puisi Sastra</span>
+                                <span class="text-xs font-semibold text-slate-400">10 Juni 2026</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-950 hover:text-blue-700 transition-colors font-serif">Puisi: "Cahaya Kasih di Ujung Pena"</h3>
+                            <p class="text-sm text-slate-600">Karya puisi bertema rasa syukur, ketulusan belajar, dan nilai budaya humanis di Sekolah Cinta Kasih Tzu Chi.</p>
+                            <div class="bg-blue-50 p-3 rounded-xl border border-blue-100 text-xs font-serif italic text-slate-800">
+                                "Di bawah naungan atap Tzu Chi yang tenang, langkah kaki melangkah membawa impian terang..."
+                            </div>
+                        </div>
+                        <div class="pt-5 mt-5 border-t border-slate-200 flex items-center justify-between">
+                            <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-md">Nilai: 98/100</span>
+                            <button data-task-id="indo-1"
+                                class="open-modal-btn font-bold text-xs bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl transition-all shadow-sm shadow-blue-500/10 flex items-center gap-1.5">
+                                <i class="fa-solid fa-book-open"></i> Baca Lengkap
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Indo Item 2 -->
+                    <div class="indo-card glass-card p-6 rounded-2xl border border-blue-100 hover-lift flex flex-col justify-between"
+                        data-category="esai" data-title="esai ilmiah pentingnya budaya humanis di era digital"
+                        data-desc="esai kritis mengenai etika dan empati generasi muda">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white">Esai &amp; Opini</span>
+                                <span class="text-xs font-semibold text-slate-400">20 Mei 2026</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-950 hover:text-blue-700 transition-colors">Esai Ilmiah: "Pentingnya Budaya Humanis di Era Digital"</h3>
+                            <p class="text-sm text-slate-600">Esai kritis mengenai bagaimana nilai-nilai etika dan empati menjadi benteng utama generasi muda dalam berinteraksi di dunia digital.</p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-blue-50 text-blue-700 border border-blue-100">Esai Kritis</span>
+                                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-blue-50 text-blue-700 border border-blue-100">Etika Digital</span>
+                            </div>
+                        </div>
+                        <div class="pt-5 mt-5 border-t border-slate-200 flex items-center justify-between">
+                            <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-md">Nilai: 96/100</span>
+                            <button data-task-id="indo-2"
+                                class="open-modal-btn font-bold text-xs bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl transition-all shadow-sm shadow-blue-500/10 flex items-center gap-1.5">
+                                <i class="fa-solid fa-book-open"></i> Baca Lengkap
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Indo Item 3 -->
+                    <div class="indo-card glass-card p-6 rounded-2xl border border-blue-100 hover-lift flex flex-col justify-between"
+                        data-category="resensi" data-title="resensi buku bumi manusia pramoeadya ananta toer"
+                        data-desc="ulasan komprehensif mengenai latar belakang sejarah dan penokohan novel bumi manusia">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white">Resensi Buku</span>
+                                <span class="text-xs font-semibold text-slate-400">14 April 2026</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-950 hover:text-blue-700 transition-colors font-sans">Resensi Novel: "Bumi Manusia" karya Pramoedya</h3>
+                            <p class="text-sm text-slate-600">Ulasan komprehensif mengenai perjuangan kesetaraan, penokohan Minke, serta kelebihan karya sastra klasik Indonesia.</p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-blue-50 text-blue-700 border border-blue-100">Resensi Literasi</span>
+                                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-blue-50 text-blue-700 border border-blue-100">Sastra Klasik</span>
+                            </div>
+                        </div>
+                        <div class="pt-5 mt-5 border-t border-slate-200 flex items-center justify-between">
+                            <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-md">Nilai: 95/100</span>
+                            <button data-task-id="indo-3"
+                                class="open-modal-btn font-bold text-xs bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl transition-all shadow-sm shadow-blue-500/10 flex items-center gap-1.5">
+                                <i class="fa-solid fa-book-open"></i> Baca Lengkap
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Indo Item 4 -->
+                    <div class="indo-card glass-card p-6 rounded-2xl border border-blue-100 hover-lift flex flex-col justify-between"
+                        data-category="esai" data-title="naskah presentasi ceramah kesantunan berbahasa pidato"
+                        data-desc="naskah pidato dan penyampaian pesan kesantunan berbahasa sehari-hari">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white">Retorika &amp; Pidato</span>
+                                <span class="text-xs font-semibold text-slate-400">05 Maret 2026</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-950 hover:text-blue-700 transition-colors font-sans">Naskah Presentasi Ceramah &amp; Kesantunan Berbahasa</h3>
+                            <p class="text-sm text-slate-600">Naskah pidato komunikasi publik mengenai pentingnya membiasakan kata Tolong, Maaf, dan Terima Kasih di sekolah dan keluarga.</p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-blue-50 text-blue-700 border border-blue-100">Public Speaking</span>
+                                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-blue-50 text-blue-700 border border-blue-100">Komunikasi</span>
+                            </div>
+                        </div>
+                        <div class="pt-5 mt-5 border-t border-slate-200 flex items-center justify-between">
+                            <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-md">Nilai: 97/100</span>
+                            <button data-task-id="indo-4"
+                                class="open-modal-btn font-bold text-xs bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl transition-all shadow-sm shadow-blue-500/10 flex items-center gap-1.5">
+                                <i class="fa-solid fa-book-open"></i> Baca Lengkap
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== ASSIGNMENT DETAIL MODAL ==================== -->
+    <div id="assignment-modal"
+        class="fixed inset-0 bg-slate-950/80 backdrop-blur-xs z-50 hidden items-center justify-center p-4 sm:p-6 overflow-y-auto">
+        <div
+            class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl space-y-6 relative border border-blue-100 max-h-[90vh] overflow-y-auto">
+
+            <!-- Close Button -->
+            <button id="close-modal-btn" aria-label="Tutup modal"
+                class="absolute top-5 right-5 w-9 h-9 rounded-full bg-blue-50 hover:bg-blue-100 text-blue-700 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-base"></i>
+            </button>
+
+            <!-- Modal Header -->
+            <div class="space-y-2 pr-8">
+                <span id="modal-subject"
+                    class="text-xs font-bold uppercase tracking-wider text-white bg-blue-600 px-3 py-1 rounded-full inline-block">
+                    Mata Pelajaran
+                </span>
+                <h3 id="modal-title" class="text-2xl font-extrabold text-slate-950">Judul Tugas</h3>
+
+                <div class="flex flex-wrap items-center gap-4 text-xs text-slate-500 pt-1">
+                    <span><i class="fa-solid fa-calendar text-blue-600 mr-1"></i> Tanggal: <strong id="modal-date"
+                            class="text-slate-800">10 Juni 2026</strong></span>
+                    <span><i class="fa-solid fa-award text-blue-600 mr-1"></i> Nilai Guru: <strong id="modal-score"
+                            class="text-blue-700">98/100</strong></span>
+                </div>
+            </div>
+
+            <!-- Modal Tags -->
+            <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+
+            <!-- Modal Dynamic Content -->
+            <div id="modal-body-content"
+                class="py-2 border-t border-b border-slate-200 text-slate-700 text-sm leading-relaxed">
+                <!-- Injected via JavaScript -->
+            </div>
+
+            <!-- Modal Actions -->
+            <div class="flex justify-end gap-3 pt-2">
+                <button onclick="document.getElementById('close-modal-btn').click()"
+                    class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-colors shadow-sm shadow-blue-500/10">
+                    Tutup Pratinjau
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ==================== FOOTER & SOCIAL MEDIA ==================== -->
+    <footer class="bg-slate-950 text-white border-t border-blue-950 pt-16 pb-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+
+                <!-- Col 1: Brand & School -->
+                <div class="md:col-span-6 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 border border-blue-500/30 text-white flex items-center justify-center font-extrabold text-xl shadow-md">
+                            V
+                        </div>
+                        <div>
+                            <h4 class="font-extrabold text-lg text-white">VIONA</h4>
+                            <p class="text-xs font-semibold text-blue-400">SEKOLAH CINTA KASIH TZU CHI</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-md">
+                        Website portofolio pribadi dan kumpulan karya tugas siswa untuk mata pelajaran Informatika dan
+                        Bahasa Indonesia. Dibuat dengan penuh dedikasi dan budaya humanis.
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigation Shortcuts -->
+                <div class="md:col-span-3 space-y-3">
+                    <h5 class="text-xs font-bold uppercase tracking-widest text-blue-500">Navigasi Halaman</h5>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li><a href="INFOR.html?tab=dashboard" class="hover:text-blue-400 transition-colors">Dashboard</a></li>
+                        <li><a href="INFOR.html?tab=profil" class="hover:text-blue-400 transition-colors">Profil Viona</a></li>
+                        <li><a href="informatika.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition-colors">Tugas Informatika</a></li>
+                        <li><a href="bahasa-indonesia.html" target="_blank" rel="noopener" class="hover:text-blue-400 transition-colors">Tugas Bahasa Indonesia</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Social Media Links -->
+                <div class="md:col-span-3 space-y-3">
+                    <h5 class="text-xs font-bold uppercase tracking-widest text-blue-500">Sosial Media Viona</h5>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"
+                            class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-blue-600 text-slate-300 hover:text-white flex items-center justify-center transition-all border border-blue-900/30">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"
+                            class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-blue-600 text-slate-300 hover:text-white flex items-center justify-center transition-all border border-blue-900/30">
+                            <i class="fa-brands fa-github text-lg"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"
+                            class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-blue-600 text-slate-300 hover:text-white flex items-center justify-center transition-all border border-blue-900/30">
+                            <i class="fa-brands fa-linkedin-in text-lg"></i>
+                        </a>
+                    </div>
+                    <p class="text-xs text-slate-500 pt-1">Klik ikon untuk berkunjung ke sosial media resmi saya.</p>
+                </div>
+
+            </div>
+
+            <div
+                class="pt-8 border-t border-blue-950/80 text-center text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>&copy; 2026 VIONA VINEZ WONGSO| SMA CINTA KASIH TZUCHI.</p>
+                <p class="text-slate-600">Dirancang dengan HTML5, Tailwind CSS, &amp; JavaScript (Blue &amp; White Premium Edition).</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Application Logic -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
